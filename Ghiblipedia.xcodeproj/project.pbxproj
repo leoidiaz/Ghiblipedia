@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29358C3923A438E6004E6318 /* ghibli.png in Resources */ = {isa = PBXBuildFile; fileRef = 29358C3823A438E6004E6318 /* ghibli.png */; };
+		2944113423A1BF9200D4F823 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2944113323A1BF9200D4F823 /* FilmModel.swift */; };
 		29C44DC9239EF462004150D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C44DC8239EF462004150D2 /* AppDelegate.swift */; };
 		29C44DCB239EF462004150D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C44DCA239EF462004150D2 /* SceneDelegate.swift */; };
 		29C44DCD239EF462004150D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C44DCC239EF462004150D2 /* ViewController.swift */; };
 		29C44DD0239EF462004150D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C44DCE239EF462004150D2 /* Main.storyboard */; };
 		29C44DD2239EF463004150D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C44DD1239EF463004150D2 /* Assets.xcassets */; };
 		29C44DD5239EF463004150D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C44DD3239EF463004150D2 /* LaunchScreen.storyboard */; };
+		29C44DDE239EF5FA004150D2 /* FilmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C44DDD239EF5FA004150D2 /* FilmManager.swift */; };
+		29C44DE0239F0716004150D2 /* FilmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C44DDF239F0716004150D2 /* FilmData.swift */; };
+		29F96A8D23A06BC600A41700 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F96A8C23A06BC600A41700 /* DetailsViewController.swift */; };
+		29F96A8F23A0A04500A41700 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F96A8E23A0A04500A41700 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29358C3823A438E6004E6318 /* ghibli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghibli.png; sourceTree = "<group>"; };
+		2944113323A1BF9200D4F823 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
 		29C44DC5239EF462004150D2 /* Ghiblipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ghiblipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C44DC8239EF462004150D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29C44DCA239EF462004150D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		29C44DD1239EF463004150D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29C44DD4239EF463004150D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29C44DD6239EF463004150D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C44DDD239EF5FA004150D2 /* FilmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmManager.swift; sourceTree = "<group>"; };
+		29C44DDF239F0716004150D2 /* FilmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmData.swift; sourceTree = "<group>"; };
+		29F96A8C23A06BC600A41700 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		29F96A8E23A0A04500A41700 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +71,26 @@
 				29C44DC8239EF462004150D2 /* AppDelegate.swift */,
 				29C44DCA239EF462004150D2 /* SceneDelegate.swift */,
 				29C44DCC239EF462004150D2 /* ViewController.swift */,
+				29F96A8E23A0A04500A41700 /* Constants.swift */,
+				29F96A8C23A06BC600A41700 /* DetailsViewController.swift */,
+				29C44DDC239EF5EB004150D2 /* Model */,
 				29C44DCE239EF462004150D2 /* Main.storyboard */,
-				29C44DD1239EF463004150D2 /* Assets.xcassets */,
 				29C44DD3239EF463004150D2 /* LaunchScreen.storyboard */,
+				29C44DD1239EF463004150D2 /* Assets.xcassets */,
+				29358C3823A438E6004E6318 /* ghibli.png */,
 				29C44DD6239EF463004150D2 /* Info.plist */,
 			);
 			path = Ghiblipedia;
+			sourceTree = "<group>";
+		};
+		29C44DDC239EF5EB004150D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29C44DDD239EF5FA004150D2 /* FilmManager.swift */,
+				29C44DDF239F0716004150D2 /* FilmData.swift */,
+				2944113323A1BF9200D4F823 /* FilmModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29358C3923A438E6004E6318 /* ghibli.png in Resources */,
 				29C44DD5239EF463004150D2 /* LaunchScreen.storyboard in Resources */,
 				29C44DD2239EF463004150D2 /* Assets.xcassets in Resources */,
 				29C44DD0239EF462004150D2 /* Main.storyboard in Resources */,
@@ -138,9 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C44DE0239F0716004150D2 /* FilmData.swift in Sources */,
 				29C44DCD239EF462004150D2 /* ViewController.swift in Sources */,
 				29C44DC9239EF462004150D2 /* AppDelegate.swift in Sources */,
+				2944113423A1BF9200D4F823 /* FilmModel.swift in Sources */,
 				29C44DCB239EF462004150D2 /* SceneDelegate.swift in Sources */,
+				29F96A8F23A0A04500A41700 /* Constants.swift in Sources */,
+				29C44DDE239EF5FA004150D2 /* FilmManager.swift in Sources */,
+				29F96A8D23A06BC600A41700 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
