@@ -14,4 +14,8 @@ struct K {
     struct imageConstants {
         static let logoIdentifier = "Studio_Ghibli_logo.svg"
     }
+    
+    struct fonts {
+        static let cellFont = "Avenir Next-Medium"
+    }
 }

@@ -69,6 +69,7 @@ extension ViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
         cell.textLabel?.text = films[indexPath.row]
+        cell.textLabel?.font = UIFont(name: K.fonts.cellFont, size: 18)
         return cell
     }
 }
